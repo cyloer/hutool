@@ -17,6 +17,7 @@ public abstract class AbstractLog implements Log, Serializable{
 	
 	@Override
 	public boolean isEnabled(Level level) {
+		
 		switch (level) {
 			case TRACE:
 				return isTraceEnabled();
